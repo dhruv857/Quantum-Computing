@@ -1,0 +1,6 @@
+[submodule "qutip-notebooks"]
+	path = qutip-notebooks
+	url = https://github.com/qutip/qutip-notebooks
+[submodule "qiskit-tutorials"]
+	path = qiskit-tutorials
+	url = https://github.com/Qiskit/qiskit-tutorials

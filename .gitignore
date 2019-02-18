@@ -23,3 +23,5 @@ qutip-notebooks/.ipynb_checkpoints
 .qiskit/qiskitrc
 .ssh
 .vim
+.tempdelete
+.vim/*
