@@ -7,16 +7,11 @@ Example used in the README. In this example a Bell state is made.
 from qiskit import QuantumCircuit, ClassicalRegister, QuantumRegister, QiskitError
 from qiskit import execute, IBMQ, BasicAer
 from qiskit.providers.ibmq import least_busy
-import configparser
 
 # Authenticate for access to remote backends
 try:
     # IBMQ.load_accounts()
-    config = configparser.ConfigParser()
-    config.read('creds.ini')
-    token_prof = config['default']['PROF']
-    token_mine = config['default']['MINE']
-    IBMQ.enable_account(token_mine)
+    IBMQ.enable_account('8e34f480c96b762726e40f2697d0f42cd3d696c9c0be5f891134174fde4bd2142feed48ef72284b97431535d3a0c24d6845225e05dced2466d4216f91eb8c900')
 except:
     print("""WARNING: There's no connection with the API for remote backends.
              Have you initialized a file with your personal token?
